@@ -44,23 +44,23 @@ macOS, or Linux. Nothing to install.
 |------|------------|
 | `index.html` | The live web app (this is what GitHub Pages serves). |
 | `versions/` | Archived snapshots of earlier versions (`pool.html` → `pool_enhanced_v6.html`). |
-| `pool.py`, `pool_gui.py`, `pooling_core.py` | Optional desktop versions (terminal + Tkinter GUI) sharing the same math. |
-| `run_gui.sh`, `Launch Pooling Helper.command`, `install-linux-launcher.sh` | Launchers for the desktop GUI (macOS / Linux). |
 | `Buffer.csv`, `DNA.csv` | The original Eppendorf epMotion worklist templates this matches. |
-| `samples.csv` | Blank sample-input template for the desktop CLI. |
 | `*.pdf` | User guides. |
 
-## Editing / contributing
+## Editing
 
 The web app is a single self-contained file: **`index.html`** (HTML + CSS +
 vanilla JS, no build step, no dependencies). Edit it directly and refresh the
-browser. The shared calculation engine is the `PoolCore` block near the top of
-the `<script>`; it has no DOM dependencies and can be unit-tested under Node:
+browser. The calculation engine is the `PoolCore` block near the top of the
+`<script>`; it has no DOM dependencies and can be unit-tested under Node:
 
 ```bash
 # extract PoolCore and run a quick check
 node -e "$(awk '/const PoolCore=\(function/{f=1} f; /^}\)\(\);$/{exit}' index.html); console.log(PoolCore.fmt(2500,0))"
 ```
+
+To publish a change: edit `index.html`, then `git commit` and `git push` —
+GitHub Pages rebuilds in under a minute.
 
 ## License
 
