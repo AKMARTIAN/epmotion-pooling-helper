@@ -1,7 +1,15 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v6).
+`versions/`; `index.html` is the current release (= v10).
+
+## v10 — PoolMate rebrand + per-row dilution overrides
+- Renamed the app to **PoolMate** (UI title, header, user guide, and generated
+  worklist header). References to **epMotion** are kept where they mean the
+  actual robot or its worklist files.
+- The standalone dilution calculator's **min transfer, max well/tube capacity,
+  and rounding** are now **per-row overrides** that fall back to shared
+  defaults — joining target and final volume, which were already per-row.
 
 ## v9 — persist done-checks with the run
 - Done-checks are now saved inside the run, so **Save run / Open run** and the
