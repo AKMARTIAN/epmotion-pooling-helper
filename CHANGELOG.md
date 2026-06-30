@@ -1,7 +1,16 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v12).
+`versions/`; `index.html` is the current release (= v13).
+
+## v13 — clearer Plate / Tube layout labels
+- Renamed the layout options to **"Tube — pool everything into one tube"** and
+  **"Plate — each sample in its own well"** (the old `one-tube` / `normalize` values
+  are unchanged under the hood). The Plate layout reproduces the Eppendorf
+  DNA.csv/Buffer.csv template structure (all Rack 1); the Tube layout pools into a
+  separate destination rack.
+- Reworded the Buffer-rack help: it should normally match the source rack, since many
+  fixed pooling scripts only use racks 1–2.
 
 ## v12 — dedicated buffer rack
 - Added a **Buffer rack number** field so buffer/diluent can sit in its own tube or
