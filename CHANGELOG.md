@@ -1,7 +1,13 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v11).
+`versions/`; `index.html` is the current release (= v12).
+
+## v12 — dedicated buffer rack
+- Added a **Buffer rack number** field so buffer/diluent can sit in its own tube or
+  reservoir on a separate deck position instead of a well of the sample plate. The
+  Buffer worklist (and the pre-dilution diluent) now source from that rack; it
+  defaults to the source rack, so existing runs are unchanged.
 
 ## v11 — PoolMate user guides
 - Regenerated the embedded **detailed PDF guide** and the standalone guide PDFs
