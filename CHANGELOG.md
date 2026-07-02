@@ -1,7 +1,14 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v17).
+`versions/`; `index.html` is the current release (= v18).
+
+## v18 — live Dilute tubes + visual polish
+- **Dilute** now shows a live **virtual tube** per sample as you type — a proper glass tube
+  with teal DNA (stock) over light-blue buffer, sized to the real ratio, with volume labels
+  and a legend. Incomplete rows show a faint empty tube prompting for target/volume.
+- Global polish pass: soft gradient background, gradient primary buttons with hover lift,
+  focus rings on inputs, and consistent card shadows.
 
 ## v17 — live section graphics + cleaner Pool actions
 - **Normalize** now shows a live **two-plate graphic** (library input plate → normalized
