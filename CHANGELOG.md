@@ -1,7 +1,16 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v14).
+`versions/`; `index.html` is the current release (= v15).
+
+## v15 — tabbed redesign + dedicated Normalize task
+- Reorganized the app into three clear tabs — **Pool**, **Normalize**, **Dilute** — so it's
+  obvious which task is which and where to enter details. Each tab is self-contained.
+- New **Normalize** task (plate → plate): enter each library's well + concentration (nM or
+  ng/µL) and a target; exports `Normalization_DNA.csv` (library → output plate, same well) +
+  `Normalization_Buffer.csv` (buffer from the reservoir at position "1"), matching the
+  Eppendorf normalization template exactly. Over-concentrated libraries are flagged to
+  pre-dilute first.
 
 ## v14 — run dilutions on the pooling script
 - The standalone dilution calculator can now **export epMotion worklists**
