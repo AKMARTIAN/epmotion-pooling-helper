@@ -1,7 +1,13 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v15).
+`versions/`; `index.html` is the current release (= v16).
+
+## v16 — Normalize inputs saved with the run
+- Normalize inputs (unit, target, volume, and the library rows) are now part of
+  **Save run / Open run** and the unsaved-session recovery banner. As with the rest of
+  the app, a plain page reload still starts blank — Normalize only comes back when a run
+  is saved/restored. **New / clear** now resets the Normalize tab too.
 
 ## v15 — tabbed redesign + dedicated Normalize task
 - Reorganized the app into three clear tabs — **Pool**, **Normalize**, **Dilute** — so it's
