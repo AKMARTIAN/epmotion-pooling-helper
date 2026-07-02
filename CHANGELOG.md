@@ -1,7 +1,17 @@
 # Changelog
 
 Version history of the standalone web app. Archived snapshots live in
-`versions/`; `index.html` is the current release (= v16).
+`versions/`; `index.html` is the current release (= v17).
+
+## v17 — live section graphics + cleaner Pool actions
+- **Normalize** now shows a live **two-plate graphic** (library input plate → normalized
+  output plate) with each library colour-coded in its well on both plates, an arrow, and a
+  legend — so you can see which sample goes where as you type.
+- **Dilute** now updates its tube preview and table **live** as you enter values (no need to
+  click Calculate first).
+- Removed the redundant top "Choose your workflow" cards (they just re-triggered the bottom
+  buttons). The Pool tab now has a short lead line explaining its three distinct actions —
+  Calculate molarities, Quick pool table, Generate worklists — which live once in the action bar.
 
 ## v16 — Normalize inputs saved with the run
 - Normalize inputs (unit, target, volume, and the library rows) are now part of
